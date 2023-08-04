@@ -1,0 +1,21 @@
+.container {
+    border: 9px red solid;
+    display: flex;
+    width: 900px;
+    height: 900px;
+    flex-direction: column;
+}
+
+.rows {
+    display: flex;
+    flex: 1;
+}
+
+.columns {
+    flex: 1;
+    border: 1px red solid;
+}
+
+.columns:hover {
+    background-color: orange;
+}
