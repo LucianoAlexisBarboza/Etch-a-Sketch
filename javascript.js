@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const gridSize = parseInt(prompt("Choose square size"));
 
 function grid(size) {
     for(let i = 0; i < size; i++) {
@@ -8,12 +9,13 @@ function grid(size) {
         let row = document.createElement("div");
         row.classList.add("row");
         column.appendChild(row);
+        row.style.backgroundColor = "white";
     }
     container.appendChild(column);
     }
 }
 
-grid(16);
+grid(gridSize);
 
 const rows = document.querySelectorAll(".row");
 rows.forEach(row => {

@@ -4,4 +4,6 @@ To do:
 
 - Improve code, make it less laggy.
 - Button to make custom amount of squares.
-- Option to choose colors
+- Option to choose colors.
+- Button to make RGB.
+- Improve UI.
