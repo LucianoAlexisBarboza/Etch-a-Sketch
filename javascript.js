@@ -1,31 +1,30 @@
 const container = document.querySelector(".container");
-rows();
 
-function rows() {
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
+function grid(size) {
+    for(let i = 0; i < size; i++) {
+        let column = document.createElement("div");
+        column.classList.add("column");
+    for(let i = 1; i <= size; i++) {
+        let row = document.createElement("div");
+        row.classList.add("row");
+        column.appendChild(row);
     }
-    for(let i = 0; i < 16; i++) {
-        const content = document.createElement("div");
-        container.appendChild(content);
-        content.classList.add("rows");     
+    container.appendChild(column);
     }
-    const gridColumn = document.querySelectorAll(".rows");
-    gridColumn.forEach(function(column) {
-        for(let i = 0; i < 16; i++) {
-            const content = document.createElement("div");
-            column.appendChild(content);
-            content.classList.add("columns")
-        }
-    });
 }
 
-const reset = document.querySelector("#eraser")
-reset.addEventListener('click', rows);
+grid(16);
 
-const grid = document.querySelectorAll(".columns");
-grid.forEach((columns) => {
-    columns.addEventListener('click', () => {
-      columns.style.background = "black";
+const rows = document.querySelectorAll(".row");
+rows.forEach(row => {
+    row.addEventListener("click", () => {
+        row.style.backgroundColor = "blue";
+    })
+})
+
+const btn = document.querySelector("#eraser");
+btn.addEventListener("click", () => {
+    rows.forEach(row => {
+        row.style.backgroundColor = "white";
     });
-  });   
+});

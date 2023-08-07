@@ -1,21 +1,17 @@
 .container {
-    border: 9px red solid;
     display: flex;
-    width: 900px;
-    height: 900px;
+    width: 960px;
+    height: 960px;
+    border: 5px red solid;
+}
+
+.column {
+    flex: 1 0 auto;
+    display: flex;
     flex-direction: column;
 }
 
-.rows {
-    display: flex;
+.row {
     flex: 1;
-}
-
-.columns {
-    flex: 1;
-    border: 1px red solid;
-}
-
-.columns:hover {
-    background-color: orange;
+    border: 1px solid black;
 }
