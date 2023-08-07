@@ -1,31 +1,37 @@
 * {
     margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    font-size: 72px;
+    font-size: 54px;
     font-family: 'Press Start 2P', cursive;
     margin: 32px;
     display: flex;
     justify-content: center;
-    margin-left: 500px;
+    margin-left: 310px;
 }
 
 .mid {
     display: flex;
     justify-content: center;
+    gap: 128px;
 }
 
 .options {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 320px;
 }
 
 .settings {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 button {
@@ -45,8 +51,8 @@ button:hover {
 
 .container {
     display: flex;
-    width: 960px;
-    height: 960px;
+    width: 700px;
+    height: 700px;
     border: 3px red solid;
     justify-content: center;
 }
@@ -67,17 +73,11 @@ button:hover {
     justify-content: center;
     align-items: end;
     margin-top: auto;
-    margin-left: 300px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 12px;
 }
 
 img {
-    width: 100px;
-    height: 100px;
-    margin-left: 32px;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    width: 60px;
+    height: 60px;
 }

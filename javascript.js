@@ -20,7 +20,7 @@ grid(gridSize);
 const rows = document.querySelectorAll(".row");
 rows.forEach(row => {
     row.addEventListener("click", () => {
-        row.style.backgroundColor = "blue";
+        row.style.backgroundColor = "black";
     })
 })
 
